@@ -6,6 +6,15 @@ import java.util.Scanner;
 public class HelloWorld {
 	public static void main (String[] args) {
 		
+		int [][] array = new int [10][10];
+		for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+            	array[i][j] = 0;
+            }
+		}
+		System.out.println(Arrays.deepToString(array));
+		array[1][3] = 666;
+		System.out.println(Arrays.deepToString(array));
 //		int a = 3;
 //	    int b = -2;
 //	    System.out.println(Math.floorMod(a,b));
@@ -15,17 +24,17 @@ public class HelloWorld {
 //		array[0][9] = 666;
 //		System.out.println(Arrays.deepToString(array));
 		
-		System.out.println(Math.floorMod(0, 5)); 
-		System.out.println(Math.floorMod(1, 5)); 
-        System.out.println(Math.floorMod(2, 5));
-		System.out.println(Math.floorMod(3, 5)); 
-        System.out.println(Math.floorMod(4, 5)); 
-        System.out.println(Math.floorMod(5, 5)); 
-        System.out.println(Math.floorMod(6, 5)); 
-        System.out.println(Math.floorMod(7, 5)); 
-        System.out.println(Math.floorMod(8, 5));
-        System.out.println(Math.floorMod(9, 5)); 
-        System.out.println(Math.floorMod(10, 5));
+//		System.out.println(Math.floorMod(0, 5)); 
+//		System.out.println(Math.floorMod(1, 5)); 
+//        System.out.println(Math.floorMod(2, 5));
+//		System.out.println(Math.floorMod(3, 5)); 
+//        System.out.println(Math.floorMod(4, 5)); 
+//        System.out.println(Math.floorMod(5, 5)); 
+//        System.out.println(Math.floorMod(6, 5)); 
+//        System.out.println(Math.floorMod(7, 5)); 
+//        System.out.println(Math.floorMod(8, 5));
+//        System.out.println(Math.floorMod(9, 5)); 
+//        System.out.println(Math.floorMod(10, 5));
 		
 //		for (int i = 0; i < 5; i++) {
 //			System.out.println("Yo man. " + i);
